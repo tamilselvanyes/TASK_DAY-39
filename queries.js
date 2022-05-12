@@ -53,7 +53,7 @@ db.students_collection
 //5. Find all the mentors with who has the mentee's count more than 15
 
 db.mentors_collection
-  .find({ $expr: { $gt: [{ $size: "$mentee_for_student_id" }, 2] } })
+  .find({ $expr: { $gt: [{ $size: "$mentee_for_student_id" }, 15] } })
   .pretty();
 
 //6. Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
