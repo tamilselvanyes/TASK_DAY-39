@@ -56,7 +56,7 @@ db.mentors_collection
   .find({ $expr: { $gt: [{ $size: "$mentee_for_student_id" }, 15] } })
   .pretty();
 
-//6. Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+//6. Find the number of users who are absent and task is not submitted
 
 //students absent
 db.attendance_collection.aggregate([
