@@ -73,6 +73,10 @@ const students_collection = [
   },
 ];
 
+//Query to insert into DB
+
+db.students_collection.insertMany(students_collection);
+
 // attendance collection
 
 const attendance_collection = [
@@ -105,6 +109,10 @@ const attendance_collection = [
     present_id: [1, 2, 3, 4, 5, 7, 9, 10],
   },
 ];
+
+//Query to insert into DB
+
+db.students_collection.insertMany(students_collection);
 
 //Topics collection
 const topics_collection = [
@@ -144,6 +152,9 @@ const topics_collection = [
     topic: "OOP,MRF",
   },
 ];
+//Query to insert into DB
+
+db.topics_collection.insertMany(topics_collection);
 
 //Tasks collection
 const tasks_collection = [
@@ -205,6 +216,10 @@ const tasks_collection = [
   },
 ];
 
+//Query to insert into DB
+
+db.tasks_collection.insertMany(tasks_collection);
+
 // Company Drives collection
 const company_drives = [
   {
@@ -239,6 +254,10 @@ const company_drives = [
   },
 ];
 
+//Query to insert into DB
+
+db.company_drives.insertMany(company_drives);
+
 // Mentors collection
 const mentors_collection = [
   {
@@ -262,3 +281,7 @@ const mentors_collection = [
     mentee_for_student_id: [8, 9, 10],
   },
 ];
+
+//Query to insert into DB
+
+db.mentors_collection.insertMany(mentors_collection);
